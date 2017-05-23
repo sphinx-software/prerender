@@ -6,7 +6,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/prerender/prerender"
+    "url": "https://github.com/prerender/prerender",
+    "start": "node_modules/.bin/forever start server.js",
+    "stop": "node_modules/.bin/forever stop server.js",
+    "restart": "node_modules/.bin/forever restart server.js"
   },
   "dependencies": {
     "aws-sdk": "^2.4.12",
